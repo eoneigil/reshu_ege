@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reshu_ege/static/css/main.ac436e98.css",
+    "main.js": "/reshu_ege/static/js/main.fb9ec60d.js",
+    "static/js/453.ed3810f9.chunk.js": "/reshu_ege/static/js/453.ed3810f9.chunk.js",
+    "static/media/Okhxsy27C_Y.jpg": "/reshu_ege/static/media/Okhxsy27C_Y.567890aced4086722b5a.jpg",
+    "index.html": "/reshu_ege/index.html",
+    "main.ac436e98.css.map": "/reshu_ege/static/css/main.ac436e98.css.map",
+    "main.fb9ec60d.js.map": "/reshu_ege/static/js/main.fb9ec60d.js.map",
+    "453.ed3810f9.chunk.js.map": "/reshu_ege/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac436e98.css",
+    "static/js/main.fb9ec60d.js"
+  ]
+}
