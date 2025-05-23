@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://<ваш-username>.github.io/<имя-репозитория>",
+  "homepage": "https://eoneigil.github.io/reshu_ege",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

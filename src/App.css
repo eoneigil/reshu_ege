@@ -295,3 +295,119 @@ body {
 .content {
   height: 700px;
 }
+
+:root {
+  --primary-color: #4285f4;
+  --primary-hover: #3367d6;
+  --background-color: #f8f9fa;
+  --card-color: #ffffff;
+  --text-color: #202124;
+  --border-color: #dadce0;
+  --footer-color: #f1f3f4;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  body {
+    background-attachment: scroll; /* Фиксированный фон может плохо работать на мобильных */
+  }
+}
+
+/* Шапка */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-list a {
+    padding: 0.5rem;
+    display: block;
+  }
+}
+
+/* Основное содержимое */
+.content {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0.5rem;
+  }
+}
+
+/* Карточки тем */
+.topics-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .topics-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* Упражнения */
+.exercise {
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  .exercise {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .options label {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Подвал */
+.footer {
+  padding: 1rem;
+}
+
+.footer-links {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .footer-links {
+    flex-direction: row;
+  }
+}
