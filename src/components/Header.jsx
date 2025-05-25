@@ -16,6 +16,7 @@ const Header = () => {
           }}>
             Главная
           </div>
+          <span style={{fontWeight: '500'}}>Русский язык</span>
         </Link>
         <ul className="nav-list" style={{marginLeft: 'auto'}}>
           <li><Link to="/verbs">Глаголы</Link></li>

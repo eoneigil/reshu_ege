@@ -6,15 +6,16 @@ import Exercise from './components/Exercise';
 import './App.css';
 
 function App() {
+  // Базовый URL берем из переменной окружения или используем '/reshu_ege' по умолчанию
+  const basename = process.env.PUBLIC_URL || '/reshu_ege';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Header />
         <main className="content">
           <div className="container">
             <Routes>
-              <Route path="/:part" element={<TopicMenu />} />
-              <Route path="/:part/:id" element={<Exercise />} />
               <Route path="/" element={
                 <div className="home">
                   <h1>Тренажёр по русскому языку</h1>
@@ -22,6 +23,8 @@ function App() {
                   <Link to="/verbs" className="btn">Начать тренировку</Link>
                 </div>
               } />
+              <Route path="/:part" element={<TopicMenu />} />
+              <Route path="/:part/:id" element={<Exercise />} />
             </Routes>
           </div>
         </main>
