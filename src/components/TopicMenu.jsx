@@ -14,7 +14,6 @@ const TopicMenu = () => {
 
   return (
     <div className="topic-menu">
-      <h2>{getPartName(part)}</h2>
       <div className="topics-grid">
         {topics.map(topic => (
           <Link 
