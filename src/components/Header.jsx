@@ -14,9 +14,8 @@ const Header = () => {
             marginRight: '1rem',
             fontWeight: 'bold'
           }}>
-            ХУЙ
+            Главная
           </div>
-          <span style={{fontWeight: '500'}}>Русский язык</span>
         </Link>
         <ul className="nav-list" style={{marginLeft: 'auto'}}>
           <li><Link to="/verbs">Глаголы</Link></li>
@@ -26,7 +25,6 @@ const Header = () => {
           <li><Link to="/participles">Причастия</Link></li>
           <li><Link to="/gerunds">Деепричастия</Link></li>
           <li><Link to="/adverbs">Наречия</Link></li>
-          <li><Link to="/pronouns">Местоимения</Link></li>
         </ul>
       </div>
     </nav>

@@ -47,12 +47,12 @@ const Exercise = () => {
       </div>
 
       <h2>{exercise.title}</h2>
-      
+
       {currentQuestion < exercise.questions.length ? (
         <div className="question">
           <h3>Вопрос {currentQuestion + 1} из {exercise.questions.length}</h3>
           <p>{exercise.questions[currentQuestion].text}</p>
-          
+
           <div className="options">
             {exercise.questions[currentQuestion].options.map((option, index) => (
               <label key={index}>
@@ -67,17 +67,20 @@ const Exercise = () => {
               </label>
             ))}
           </div>
-          
+
           <button className="btn" onClick={checkAnswer}>Проверить</button>
-          
+
           {showResult && (
             <div className="result">
               {selectedOption === exercise.questions[currentQuestion].answer ? (
                 <p className="correct">Правильно!</p>
               ) : (
-                <p className="incorrect">
-                  Неправильно! Правильный ответ: {exercise.questions[currentQuestion].answer}
-                </p>
+                <>
+                  <p className="incorrect">
+                    Неправильно! Правильный ответ: {exercise.questions[currentQuestion].answer}
+                  </p>
+                  <p><strong>Правило:</strong> {exercise.rule}</p>
+                </>
               )}
               <button className="btn" onClick={nextQuestion}>
                 {currentQuestion < exercise.questions.length - 1 ? 'Следующий вопрос' : 'Завершить тест'}
@@ -91,7 +94,7 @@ const Exercise = () => {
           <p>Ваш результат: {score} из {exercise.questions.length}</p>
           <p>Процент правильных ответов: {Math.round((score / exercise.questions.length) * 100)}%</p>
           <Link to={`/${part}`} className="btn">Вернуться к темам</Link>
-          <Link to="/" className="btn btn-outline" style={{marginLeft: '1rem'}}>На главную</Link>
+          <Link to="/" className="btn btn-outline" style={{ marginLeft: '1rem' }}>На главную</Link>
         </div>
       )}
     </div>
@@ -107,7 +110,6 @@ function getPartName(part) {
     participles: 'Причастия',
     gerunds: 'Деепричастия',
     adverbs: 'Наречия',
-    pronouns: 'Местоимения'
   };
   return names[part] || part;
 }

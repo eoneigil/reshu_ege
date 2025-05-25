@@ -39,7 +39,6 @@ function getPartName(part) {
     participles: 'Причастия',
     gerunds: 'Деепричастия',
     adverbs: 'Наречия',
-    pronouns: 'Местоимения'
   };
   return names[part] || part;
 }
