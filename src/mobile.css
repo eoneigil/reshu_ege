@@ -1,0 +1,93 @@
+/* === Мобильные стили (max-width: 768px) === */
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  body {
+    background-attachment: scroll;
+    padding: 0 0.5rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .exercise {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+  }
+
+  .question h3 {
+    font-size: 1.1rem;
+  }
+
+  .options label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border-width: 2px;
+    font-size: 1rem;
+  }
+
+  .options input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 0;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .summary {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .breadcrumbs {
+    padding-bottom: 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .breadcrumbs a,
+  .breadcrumbs span {
+    white-space: nowrap;
+  }
+
+  .topic-card {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Дополнительные улучшения */
+  .result p + p {
+    margin-top: 1rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+
+  .result button {
+    margin-top: 1rem;
+  }
+}

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import TopicMenu from './components/TopicMenu';
 import Exercise from './components/Exercise';
 import './App.css';
+import "./mobile";
 
 function App() {
   // Базовый URL берем из переменной окружения или используем '/reshu_ege' по умолчанию
